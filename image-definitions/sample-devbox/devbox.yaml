@@ -1,6 +1,10 @@
 $schema: "1.0"
 name: "custom-image-definition"
-image: microsoftwindowsdesktop_windows-ent-cpc_win11-24H2-ent-cpc
+image:
+  publisher: microsoftwindowsdesktop
+  offer: windows-ent-cpc
+  sku: win11-24H2-ent-cpc
+  version: latest
 tasks:
   - name: git-clone
     parameters:
