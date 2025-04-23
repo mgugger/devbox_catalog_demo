@@ -2,8 +2,11 @@ $schema: "1.0"
 name: "devbox-customization"
 image: microsoftvisualstudio_visualstudioplustools_vs-2022-ent-general-win11-m365-gen2
 tasks:
-  - name: git-clone
+  - name: winget
     parameters:
-      repositoryUrl: https://github.com/microsoft/calculator
-      directory: C:\Workspaces
-    description: Clone this repository into C:\Workspaces
+      package: Vivaldi.Vivaldi
+  - name: git-clone
+    description: Clone this repository into C:\git
+    parameters:
+      repositoryUrl: https://github.com/mgugger/devbox_catalog_demo.git
+      directory: C:\git
